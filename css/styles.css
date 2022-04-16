@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background:linear-gradient(to right ,blue,skyblue);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+width:70%;
+height:85%;
+display:flex;
+background-color:#fff;
+border-radius:10px;
+justify-content: space-between;
+}
+
+.left-bar{
+flex-basis: 100px;
+height:100%;
+background:linear-gradient( to bottom ,#00ff96,#00d8d4);
+border-radius: 10px 0 0 10px;
+padding:10px;
+display:flex;
+flex-direction: column;
+justify-content: flex-end;
+align-items: center;
+font-size: 1.3rem;
+color:#333;
+}
+
+.left-bar h3{
+    writing-mode:vertical-lr;
+    transform:rotate(180deg);
+}
+
+.right-bar{
+    flex-basis:500px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1c2025;
+}
+
+.main-container{
+    flex-basis:1000px;
+    background-color:#ddd;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container h1{
+    font-size: 2.3em;
+}
+
+.main-container h1 .heading{
+    color:#ff0000;
+}
+
+.main-container .assignment-info{
+    position:relative;
+    right:30%;
+    top:25%;
+    font-size: 1.3rem;
+}
+
+.main-container a{
+    background-color: #ff0000;
+    margin-top:50px;
+    padding:20px;
+    color:#f2f2f2;
+    font-weight: bold;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+.main-container a:hover{
+    background-color: #1c2025;
+    color:#fff;
+    cursor: pointer;
+}
+
+.right-bar img{
+    width:500px;
+}

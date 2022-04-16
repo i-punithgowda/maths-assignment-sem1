@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/home.css">
+    <title>Mode</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left-bar">
+            <h3>Mode</h3>
+        </div>
+        <div class="main-container">
+            <h2>What is Mode ?</h2>
+<p> <span style="color:#ff0000;font-weight:bold;">Mode</span>  means a value or a number that appears most frequently in a dataset. Sometimes we may need to find the value, which is occurring more frequently in the dataset. In such cases, we find the mode for the set of given data. There may or may not be a modal value for a given set of data. For data without any repeating values, there might be no mode at all. Also, we can find data with only one mode, two modes, three modes, or multiple modes. This depends on the given dataset.
+</p>
+
+<h2 style="text-align:center;margin-top:20px;">Examples</h2>
+<br>
+<select name="mean-data" id="datasetSelector">
+    <option value="cricket">Electives chosen by students</option>
+    <option value="temperature">Showroom Data</option>
+</select>
+
+    <div class="example-info cricket">
+        <p>A class offers 6 electives for 120 students. to find out the electives choosen by most number of students we can use mode. <br>
+         <br>
+            <span style="color:#00ff96;">
+            Elective 1 -> 60 students , Elective 2 -> 50 students <br>
+            Elective 3 -> 60 students , Elective 4 -> 30 students <br>
+            Elective 5 -> 60 students , Elective 6 -> 40 students <br>
+          </span>
+         <br >
+         A student can select any number of electives.
+         Elective 1 , Elective 3 and Elective 5 are selected by 60 students  <br>
+        Therefore , Mode => 60
+        </p>
+
+    </div>
+
+    <div class="example-info temperature">
+        <p>Consider a company manufacturing foot wear. While deciding on size of the foot wear to be manufactured, first preference is given to the size worn by maximum number of people. So again the decision has been taken on the basis of mode.
+            <br>
+           No . of people purchased size : 
+         <span style="color:#00ff96;">
+            <br> 6-> 70 , 7-> 80 <br>
+            8->70 , 9->29<br>
+            10->50<br>
+         </span>
+            So , 70 people purchased shoes of size 6 and 8 each.
+            therefore , Mode = 70
+            => 268 / 10 = 26.8
+            </p>
+
+    </div>
+
+    
+   <div class="chart-section">
+    <canvas id="myChart" ></canvas>
+   </div>
+
+   <div class="conclusion">
+</div>
+
+        </div>
+       </div>
+
+       <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+       <script src="../js/mode.js" ></script>
+       
+ 
+</body>
+</html>

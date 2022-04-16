@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background:linear-gradient(to right ,blue,skyblue);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width:70%;
+    height:85%;
+    display:flex;
+    background-color:#fff;
+    border-radius: 10px;
+    display:flex;
+    justify-content: space-between;
+}
+
+.container .left-bar{
+    flex-basis: 100px;
+    background:linear-gradient( to bottom ,#00ff96,#00d8d4);
+border-radius: 10px 0 0 10px;
+padding:10px;
+display:flex;
+flex-direction: column;
+justify-content: flex-end;
+align-items: center;
+font-size: 1.3rem;
+color:#333;
+}
+
+
+.container .left-bar h3{
+    writing-mode:vertical-lr;
+    transform:rotate(180deg);
+}
+
+.container .main-container{
+    width:100%;
+    background-color: #333;
+    color:#f2f2f2;
+    padding:20px;
+    overflow-y:auto;
+}
+
+.container .main-container h1{
+text-align: center;
+}
+
+.container .main-container h2{
+   margin-top:40px;
+}
+
+.container .main-container p{
+    margin-top:20px;
+    font-size: 1.3rem;
+    line-height: 1.6;
+    text-align: justify;
+    padding:20px;
+}
+
+.items{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top:30px;
+}
+
+
+.items .item{
+position:relative;
+height:300px;
+width:300px;
+}
+
+.items .item a{
+    text-decoration: none;
+    color:#f2f2f2;
+    position: absolute;
+    top:100%;
+    left:30%;
+    margin-top:10px;
+}
+
+.items .item a:hover{
+ color:#00ff96;
+}
+
+
+ .mean{
+   background-image: url('../img/mean.png'); 
+    background-size: cover;
+}
+
+.median{
+    background-image: url('../img/median.png');
+    background-size: cover;
+}
+
+.mode{
+    background-image: url('../img/mode.png');
+    background-size: cover;
+}
+
+
+/*Median page*/
+
+#datasetSelector{
+    margin: 0 0 0 350px;
+width:500px;
+padding:10px;
+outline:none;
+border:none;
+font-size: 1.4rem;
+font-weight: bold;
+}
+
+.example-info{
+    margin-left:150px;
+    display:none;
+    font-weight: bold;
+}
+
+.chart-section{
+    width:600px;
+    height:300px;
+    position:relative;
+    color:#f2f2f2;
+}
+
+#myChart{
+    position:absolute;
+    left:50%;
+}
+
+.conclusion{
+    margin:30px;
+}
+
+
+    /*Scroll bar  */
+
+    ::-webkit-scrollbar {
+        width: 10px;
+      }
+      
+      /* Track */
+      ::-webkit-scrollbar-track {
+        background: #000;
+      }
+      
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: linear-gradient(to bottom ,#00ff96,#00d8d4)
+      }

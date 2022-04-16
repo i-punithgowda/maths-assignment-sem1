@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/home.css">
+    <title>Median</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left-bar">
+            <h3>Median</h3>
+        </div>
+        <div class="main-container">
+            <h2>What is Median ?</h2>
+            <p> <span style="color:#ff0000;font-weight:bold;">Median</span> is a statistical measure that determines the middle value of a dataset listed in ascending order (i.e., from smallest to largest value). The measure divides the lower half from the higher half of the dataset , then the central value is called median.</p>
+            <h2 style="text-align:center;margin-top:20px;">Examples</h2>
+<br>
+<select name="mean-data" id="datasetSelector">
+    <option value="cricket">Marks of students</option>
+    <option value="temperature">Cost data</option>
+</select>
+
+<div class="example-info cricket">
+    <p>Marks of 11 students in class 10 in a subject are given as : 35 , 40 , 38 , 17 , 25 , 45 , 36 , 29 , 42 , 22
+    <br>
+    Total number of students = 10 <br>
+    Marks after sorting = 17, 22, 25, 29, 35, 36, 38, 40, 42, 45 , 100 <br >
+    So , Median = (n+1)th term in sorted array
+    => (11+1)/2<sup>th</sup> term = 12/2=6<sup>th</sup> term
+    <br> i.e Median = 36 
+    </p>
+
+</div>
+
+
+<div class="example-info temperature">
+    <p>
+        5 houses are sold for the following amounts: 25000, 29000, 15900, 27000, and 27000. 
+    <br>
+    Total number of Houses = 10 <br>
+    Cost after sorting = 15900,25000,27000,29000,30300 <br >
+    So , Median = (n+1)th term in sorted array
+    => (5+1)/2<sup>th</sup> term = 6/2=3<sup>rd</sup> term
+    <br> i.e Median = 27
+Where as mean would be 53.4 , in such cases 27 is better representation of data than 53.
+</p>
+
+
+</div>
+
+<div class="chart-section">
+    <canvas id="myChart" ></canvas>
+   </div>
+
+ 
+
+<div class="conclusion">
+    <p>
+     In some cases medians can give better result when data consists of outliers because result of medians are not affected by outliers, 
+The middle (median) remains the same middle value regardless of the size of the highest or the lowest case, which has great effects on the average.
+
+    </p>
+    </div>
+
+        </div>
+
+       </div>
+       <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+       <script src="../js/median.js"></script>
+</body>
+</html>

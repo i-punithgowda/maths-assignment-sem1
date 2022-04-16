@@ -1,0 +1,77 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/home.css">
+    <title>Mean</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left-bar">
+            <h3>Mean</h3>
+        </div>
+        <div class="main-container">
+            <h2>What is Mean ?</h2>
+<p> <span style="color:#ff0000;font-weight:bold;">Mean</span> is just another name for average. To find the mean of a data set, add all the values together and divide by the number of values in the set. The result is  mean!</p>
+
+<h2 style="text-align:center;margin-top:20px;">Examples</h2>
+<br>
+<select name="mean-data" id="datasetSelector">
+    <option value="cricket">Cricket Scores</option>
+    <option value="temperature">Temperature Data</option>
+    <option value="heights">Heights of trees</option>
+</select>
+
+    <div class="example-info cricket">
+        <p>A cricketer scores the following runs in eight innings:
+            58, 76, 40, 35, 46, 45, 20, 100.
+        <br>
+        Total number of innings = 8 <br>
+        Total score = 58+76+40+35+46+45+20+100=420 <br >
+        So , Mean = Total Score / Total no. of innings 
+        => 420 / 8 = 52.5
+        </p>
+
+    </div>
+
+    <div class="example-info temperature">
+        <p>The daily february temperatures for 10 days are listed for a certain city. <br>
+            Temperatures are : 20,21,22,24,25,26,27,29,37,37
+            <br>
+            Total days = 10 <br>
+            Total Temperature = 20+21+22+24+25+26+27+29+37+37=268 <br >
+            So , Mean = Total Temperature / Total days 
+            => 268 / 10 = 26.8
+            </p>
+
+    </div>
+
+    <div class="example-info heights">
+        <p>There are 5 trees in Terry’s front yard. He measures each tree to find out how tall it is in inches and writes the measurement on a sheet of paper. This is Terry’s list: 98, 94, 41, 96, and 11. What is the average height of a tree in Terry’s front yard?
+        <br>
+        Total number of Trees = 5 <br>
+        Total height = 98+94+41+96+11=400 <br >
+        So , Mean = Total height / Total no. of trees 
+        => 400 / 8 = 50
+        </p>
+
+    </div>
+   <div class="chart-section">
+    <canvas id="myChart" ></canvas>
+   </div>
+
+   <div class="conclusion">
+<p>    Whenever a graph falls on a normal distribution, using the mean is a good choice. But if data has extreme scores (such as the difference between a millionaire and someone making 30,000 a year), you will need to look at <a style="color:#00ff96;text-decoration: none;" href="../pages/median.html">median</a>, because you’ll find a much more representative number for your sample.
+</p>
+</div>
+
+        </div>
+       </div>
+
+       <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+       <script src="../js/mean.js" ></script>
+       
+ 
+</body>
+</html>
