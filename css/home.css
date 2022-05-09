@@ -67,12 +67,20 @@ text-align: center;
     padding:20px;
 }
 
+.container .main-container p{
+    margin-top:20px;
+    font-size: 1.3rem;
+    line-height: 1.6;
+    text-align: justify;
+    padding:20px;
+}
+
 .container .main-container .cards,.button-navigators{
     display:flex;
     justify-content: space-evenly;
     align-items: center;
     width:100%;
-    padding:30px;
+    margin-top:30px;
 }
 
 .container .main-container .cards .card{
@@ -83,8 +91,8 @@ text-align: center;
  
 
 .container .main-container .cards .card img{
-    width:300px;
-    height:300px;
+    width:200px;
+    height:200px;
 }
  
 .container .main-container .cards .card p{
