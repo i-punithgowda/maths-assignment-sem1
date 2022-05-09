@@ -1,0 +1,95 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/home.css">
+    <title>Correlation example</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left-bar">
+            <h3>Correlation example</h3>
+        </div>
+        <div class="main-container">
+          
+            <h1 style="text-align:center">Examples on types of correlation</h1>
+                <br>
+<select name="mean-data" id="datasetSelector">
+    <option value="pv-c">Positive correlation</option>
+    <option value="nv-c">Negative correlation</option>
+</select>
+<br>
+
+   <div class="actual-examples" style="margin-top:50px;font-size:1.4rem">
+    <div class="example-info pv-data">
+       <p style="width:900px;">
+        When the price of petrol increases, the demand for Electric car increases. 
+        So every time with an increase in petrol price, it has been found that demand for Electric car has increased
+       </p>
+
+      <div class="tbl-data">
+        <table>
+            <tr>
+                <th>Petrol Price (Per litre) </th>
+                <td>65</td>
+                <td>70</td>
+                <td>75</td>
+                <td>80</td>
+                <td>85</td>
+            </tr>
+            <tr>
+                <th>Demand for electic car (per month)</th>
+                 <td>200</td>
+                 <td>250</td>
+                 <td>300</td>
+                 <td>400</td>
+                 <td>500</td>
+         </tr>
+        </table>
+ 
+      </div>
+    </div>
+
+    <div class="example-info nv-data">
+        <p style="width:900px;">
+          As no. of tv watching hours increases , marks of student keeps decreasing
+           </p>
+    
+          <div class="tbl-data">
+            <table>
+                <tr>
+                    <th>No of hours kid watches tv (per day)</th>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>8.5</td>
+                </tr>
+                <tr>
+                    <th>Average of marks</th>
+                     <td>200</td>
+                     <td>180</td>
+                     <td>155</td>
+                     <td>100</td>
+                     <td>80</td>
+             </tr>
+            </table>
+     
+          </div>
+    </div>
+
+   </div>
+   
+   <div class="chart-section">
+    <canvas id="myChart" ></canvas>
+   </div>
+        </div>
+       </div>
+
+       <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+       <script src="../js/correlation.js" ></script>
+       
+ 
+</body>
+</html>

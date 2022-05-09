@@ -59,13 +59,65 @@ text-align: center;
    margin-top:40px;
 }
 
-.container .main-container p{
+.container .main-container .info{
     margin-top:20px;
     font-size: 1.3rem;
     line-height: 1.6;
     text-align: justify;
     padding:20px;
 }
+
+.container .main-container .cards,.button-navigators{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width:100%;
+    padding:30px;
+}
+
+.container .main-container .cards .card{
+    width:300px;
+    text-align: center;
+}
+
+ 
+
+.container .main-container .cards .card img{
+    width:300px;
+    height:300px;
+}
+ 
+.container .main-container .cards .card p{
+    text-align: justify;
+    margin-top:10px;
+}
+
+.button-navigators .btn-navigate{
+    padding:15px 20px;
+    border:none;
+    font-size:1.3rem;
+    outline:none;
+    background-color: #ff0000;
+    color:#fff;
+    font-weight: bold;
+    
+}
+
+.button-navigators .btn-navigate:active{
+   color:#ff0000;
+   background-color: #f2f2f2;
+   transition: 0.2s ease;
+    
+}
+
+.button-navigators .btn-navigate a{
+    color:#fff;
+    text-decoration: none;
+     
+ }
+ 
+ 
+
 
 .items{
     display:flex;
@@ -160,4 +212,19 @@ font-weight: bold;
       /* Handle */
       ::-webkit-scrollbar-thumb {
         background: linear-gradient(to bottom ,#00ff96,#00d8d4)
+      }
+
+
+      .tbl-data{
+          width:100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height:200px;
+      }
+
+      .tbl-data td,th{
+        padding:5px 8px;
+        background-color: #f2f2f2;
+        border:none;
       }

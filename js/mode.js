@@ -16,7 +16,7 @@ const data = {
 }
 
 var myChart = new Chart(chartField, {
-    type: "doughnut",
+    type: "bar",
     data: data,
     options: {
         responsive: true,
